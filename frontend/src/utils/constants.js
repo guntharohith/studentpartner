@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react"
-export const url = "https://student-partner-rohith.herokuapp.com/"
+export const url = "http://localhost:8080/"
 export function useLocalStorage(key, initialCode) {
 
     const [code, setCode] = useState(() => {
