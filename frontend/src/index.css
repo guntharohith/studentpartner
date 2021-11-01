@@ -1,0 +1,99 @@
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section{
+  padding: 5rem 0;
+}
+.section-center{
+  width: 90vw;
+  margin:0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading{
+  height: 6rem;
+  width: 6rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border:4px solid #ccc;
+  border-top-color: hsl(22, 31%, 52%);
+  animation: spinner 0.6s linear infinite ;
+}
+
+.some{
+  color:rgb(62, 74, 62);
+  display: grid;
+  align-items: baseline;
+  
+}
+.page-100 {
+  min-height: calc(100vh - 10rem);
+  padding: 5rem 0;
+}
+.page {
+  min-height: calc(100vh - (20vh + 10rem));
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  display:flex;
+  align-items: center;
+  background-color:hsl(22, 31%, 52%);
+  color:hsl(22, 31%, 88%);
+  border:none;
+  padding:7px;
+  font-size:18px;
+  letter-spacing: 1px;
+  border-radius:5px;
+  transition:all 0.3s linear;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom:10px;
+}
+.btn:hover{
+  background-color: hsl(22, 31%, 67%);
+  color:hsl(22, 28%, 21%)
+}
+
+.some{
+  color:rgb(249, 244, 242);
+  
+}
+
+ul{
+  list-style-type: none;
+  padding:0;
+}
+
